@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Script } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -84,6 +85,8 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <Script id="first-unique-id" dangerouslySetInnerHTML={{ __html: `alert('Hello world')` }} />
+      <Script id="second-unique-id">{`alert('Hello world')`}</Script>  
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
